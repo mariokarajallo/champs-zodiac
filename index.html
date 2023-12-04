@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid custom-container">
+        <!-- Fondo degradado -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 background-gradient"></div>
+
+
+
+        <!-- Fondo rotativo -->
+        <div class="img-background d-flex align-items-center justify-content-center w-100 h-100"
+            id="background-container">
+            <img src="/img/metalness-wheel.png" alt="Background" class="img-fluid" id="background">
+        </div>
+
+        <div class="content">
+
+
+            <div class="row my-5">
+                <div class="col text-center logo-container">
+                    <img src="/img/logo carolina herrera.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <div>
+                        <p class="title fs-1 text-white lh-1 m-0">EL ZODIACO </p>
+                        <p class="title fs-1 text-white lh-1 m-0">MÁGICO HERRERA </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row my-5">
+                <div>
+                    <span class="fs-5 text-white">Encuentra el regalo mágico perfecto para estas fiestas con la Carta
+                        Astral
+                        Herrera.</span>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <button class="btn btn-light border-0 px-5 py-3" onmouseover="this.style.transform='scale(1.05)';"
+                    onmouseout="this.style.transform='scale(1)';">
+                    <span class="text-uppercase fs-6 fw-bold">empezar ya</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const element = document.getElementById('background-container');
+
+            document.addEventListener('mousemove', (e) => {
+                moveElement(e);
+            });
+
+            function moveElement(e) {
+                const { clientX, clientY } = e;
+                const { left, top, width, height } = element.getBoundingClientRect();
+
+                const xPos = (clientX - left - width / 2) / (width / 2);
+                const yPos = (clientY - top - height / 2) / (height / 2);
+
+                const moveX = -xPos * 25; // Ajusta la sensibilidad del movimiento en el eje X
+                const moveY = -yPos * 25; // Ajusta la sensibilidad del movimiento en el eje Y
+
+                element.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            }
+        });
+    </script>
+    <script>
+        const rotatingImage = document.getElementById('background');
+
+        let rotationAngle = 0;
+
+        function rotateImage() {
+            rotationAngle += 0.1;
+            rotatingImage.style.transform = `rotate(${rotationAngle}deg)`;
+
+            requestAnimationFrame(rotateImage);
+        }
+
+        rotateImage(); // Inicia la rotación
+    </script>
+
+
+</body>
+
+</html>
