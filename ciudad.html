@@ -102,6 +102,8 @@
                 style="height: 300px;">
                 <img src="/img/rueda-principal.webp" alt="Background" class="img-fluid" id="background"
                     style="max-width: 600px;">
+                <img src="/img/rueda-borde.webp" alt="Background" class="img-fluid" id="background2"
+                    style="max-width: 750px; z-index: -1; position: absolute;">
             </div>
         </div>
         <!--FIN FOOTER-->
@@ -133,6 +135,23 @@
         }
 
         rotateImage(); // Inicia la rotación
+    </script>
+    <!-- FIN FONDO ROTATIVO -->
+
+    <!-- FONDO ROTATIVO -->
+    <script>
+        const rotatingImage2 = document.getElementById('background2');
+
+        let rotationAngle2 = 0;
+
+        function rotateImage2() {
+            rotationAngle2 -= 0.1; // Resta en lugar de sumar para rotar en sentido contrario
+            rotatingImage2.style.transform = `rotate(${rotationAngle2}deg)`;
+
+            requestAnimationFrame(rotateImage2);
+        }
+
+        rotateImage2(); // Inicia la rotación
     </script>
     <!-- FIN FONDO ROTATIVO -->
 

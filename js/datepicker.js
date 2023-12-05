@@ -6,5 +6,6 @@ $(document).ready(function () {
     clearBtn: true,
     orientation: "bottom auto",
     todayHighlight: true,
+    autoclose: true,
   });
 });
