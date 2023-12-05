@@ -77,19 +77,49 @@ body {
   transform: scale(1.05);
 }
 
-/* Estilo personalizado para el campo de entrada de fecha */
-input[type="date"] {
+/* Estilo personalizado para el día activo en el selector de fecha */
+.datepicker td.active,
+.datepicker td.active:active,
+.datepicker td.active:focus {
+  background-color: #9d1f16 !important; /* Cambiar el color de fondo */
   color: #fff; /* Cambiar el color del texto */
-  background-color: #9d1f16; /* Cambiar el color de fondo */
-  border: 1px solid #570a05; /* Cambiar el color del borde */
-  border-radius: 5px; /* Agregar esquinas redondeadas */
-  padding: 8px; /* Añadir espacio interno */
-  font-weight: 500;
+  border-color: #9d1f16 !important;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(139, 26, 19),
+    rgb(55, 3, 7)
+  ) !important;
 }
 
-/* Estilo para cambiar el color del texto dentro del selector de fecha (en algunos navegadores) */
-input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1);
+/* mobile*/
+/* Estilos para dispositivos extra pequeños (xs) */
+@media (max-width: 575.98px) {
+}
+
+/* Estilos para dispositivos pequeños (sm) */
+@media (min-width: 576px) {
+}
+
+/* Estilos para dispositivos medianos (md) */
+@media (min-width: 768px) {
+}
+
+/* Estilos para dispositivos grandes (lg) */
+@media (min-width: 992px) {
+}
+
+/* Estilos para dispositivos extra grandes (xl) */
+@media (min-width: 1200px) {
+  .content {
+    margin-top: 50px;
+  }
+}
+
+/* Estilos para dispositivos extra extra grandes (xxl) */
+@media (min-width: 1400px) {
+  .content {
+    margin-top: 100px;
+  }
 }
 
 #stars {

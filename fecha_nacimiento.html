@@ -4,10 +4,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Carolina Herrera</title>
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!--JS DATE PICKER-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.standalone.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -15,16 +37,19 @@
 
         <!-- Fondo degradado -->
         <div class="position-absolute top-0 start-0 w-100 h-100 background-gradient"></div>
+        <!-- FIN Fondo degradado -->
 
-
+        <!-- FONDO DE ESTRELLAS -->
         <section class="wrapper">
             <div id="stars"></div>
             <div id="stars2"></div>
             <div id="stars3"></div>
         </section>
+        <!-- FIN FONDO DE ESTRELLAS-->
 
-        <!-- contenido -->
+        <!-- CONTENIDO PRINCIPAL -->
         <div class="content">
+            <!-- TITULO -->
             <div class="row my-5">
                 <div class="col text-center">
                     <div>
@@ -33,38 +58,68 @@
                     </div>
                 </div>
             </div>
+            <!-- FIN TITULO -->
 
+            <!-- FECHA NACIMIENTO-->
             <div class="row my-5">
                 <div class="col d-flex align-items-center">
                     <div class="me-5">
                         <span class="title fs-3 text-white">Nacio el</span>
                     </div>
-                    <div>
-                        <input type="date" class="form-control" id="fecha" name="fecha">
+                    <!-- INPUT FECHA NACIMIENTO-->
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control datepicker" id="fecha" name="fecha" min="1930-01-01"
+                                max="2030-12-31">
+                            <span class="input-group-text">
+                                <i class="bi bi-calendar3"></i>
+                            </span>
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
+            <!-- FIN FECHA NACIMIENTO-->
+
+            <!-- BOTON SIGUIENTE-->
             <div class="row my-5">
-                <button class="btn btn-light border-0 px-5 py-3" onmouseover="this.style.transform='scale(1.05)';"
-                    onmouseout="this.style.transform='scale(1)';">
-                    <span class="text-uppercase fs-6 fw-bold">SIGUIENTE</span>
-                </button>
+                <a href="/ciudad.html">
+                    <button class="btn btn-light border-0 px-5 py-3" onmouseover="this.style.transform='scale(1.05)';"
+                        onmouseout="this.style.transform='scale(1)';">
+                        <span class="text-uppercase fs-6 fw-bold">SIGUIENTE</span>
+                    </button>
+                </a>
             </div>
+            <!-- FIN BOTON SIGUIENTE-->
 
 
 
         </div>
-        <div class="bg-info  w-100" style="margin-top: auto;">
-            hola
+        <!--FOOTER-->
+        <div class="w-100 position-fixed" style="bottom: -100px;">
+            <div class="d-flex align-items-center justify-content-center" id="background-container"
+                style="height: 300px;">
+                <img src="/img/metalness-wheel.png" alt="Background" class="img-fluid" id="background"
+                    style="max-width: 600px;">
+            </div>
         </div>
+        <!--FIN FOOTER-->
 
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- FIN SCRIPT BOOTSTRAP-->
+
+    <!--JS DATE PICKER-->
+    <script src="/js/datepicker.js"></script>
+    <!--FIN JS DATE PICKER-->
+
+    <!-- FONDO ROTATIVO -->
     <script>
         const rotatingImage = document.getElementById('background');
 
@@ -79,6 +134,7 @@
 
         rotateImage(); // Inicia la rotación
     </script>
+    <!-- FIN FONDO ROTATIVO -->
 
 </body>
 
