@@ -77,6 +77,18 @@ body {
   transform: scale(1.05);
 }
 
+.btn-product {
+  background-color: #9d1f16 !important;
+  color: #fff !important;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease !important;
+}
+
+.btn-product:hover {
+  background-color: rgb(55, 3, 7) !important;
+  color: #fff !important;
+  transform: scale(1.05) !important;
+}
+
 /* Estilo personalizado para el día activo en el selector de fecha */
 .datepicker td.active,
 .datepicker td.active:active,
@@ -138,16 +150,10 @@ body {
 
 /* Estilos para dispositivos extra grandes (xl) */
 @media (min-width: 1200px) {
-  .content {
-    margin-top: 50px;
-  }
 }
 
 /* Estilos para dispositivos extra extra grandes (xxl) */
 @media (min-width: 1400px) {
-  .content {
-    margin-top: 100px;
-  }
 }
 
 #stars {

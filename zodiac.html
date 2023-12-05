@@ -42,28 +42,81 @@
 
 
         <!-- CONTENIDO PRINCIPAL -->
-        <div class="content" style="min-height: 100vh;">
-            <!--contenido fijo-->
-            <div class="d-flex align-items-center justify-content-center" id="background-container"
-                style="height: 300px;">
-                <!--TEXTO ANIMADO-->
-                <div class="text-center" style="z-index: 1; position: absolute;">
-                    <p class="animated-paragraph fs-1 text-white title lh-1">Las estrellas se estan</p>
-                    <p class="animated-paragraph fs-1 text-white title lh-1">alineando, para </p>
-                    <p class="animated-paragraph fs-1 text-white title lh-1">develar su</p>
-                    <a href="/zodiac.html" class="text-decoration-none animated-paragraph">
-                        <button class="btn btn-light border-0 px-5 py-3"
-                            onmouseover="this.style.transform='scale(1.05)';"
-                            onmouseout="this.style.transform='scale(1)';">
-                            <span class="text-uppercase fs-6 fw-bold">DESTINO</span>
-                        </button>
-                    </a>
+        <div class="content m-0" style="min-height: 100vh;">
+            <!-- TEXTOS -->
+
+            <div class="row">
+                <div class="col text-center">
+                    <!--SIGNO ZODIACAL-->
+                    <div>
+                        <p class="title fs-1 text-white m-0" id="sign">Piscis, su destino está escrito</p>
+                    </div>
+                    <!--DESCRIPCION 1 SIGNO ZODIACAL-->
+                    <div class="container">
+                        <p class=" fs-5 text-white lh-1" id="sign_desc">Desvelamos el Zodíaco Herrera: carta astral
+                            y una recomendación de regalo exclusiva, ¡además de un premio para ti!</p>
+                    </div>
                 </div>
-                <img src="/img/rueda-principal.webp" alt="Background" class="img-fluid" id="background"
-                    style="max-width: 600px;">
-                <img src="/img/rueda-borde.webp" alt="Background" class="img-fluid" id="background2"
-                    style="max-width: 750px; z-index: -1; position: absolute;">
+
             </div>
+
+            <div class="row align-items-center container my-5">
+                <!--IMAGEN SIGNO ZODIACAL-->
+                <div class="col">
+                    <img src="/img/sign/Montajes Ruedas CH_piscis.webp" class="img-fluid" alt="">
+                </div>
+                <!--INFORMACION SIGNO ZODIACAL-->
+                <div class="col">
+                    <div class="text-left fs-6 text-white">
+                        <p>Los nacidos bajo el signo de Piscis son conocidos por su intuición, sensibilidad y
+                            creatividad. Son personas soñadoras y románticas, capaces de conectar profundamente con los
+                            demás y de ver más allá de lo evidente. Su naturaleza compasiva y empática los convierte en
+                            grandes amigos y confidentes.</p>
+
+                        <p>En 2024, los Piscis se encontrarán en un momento de transformación y crecimiento personal,
+                            donde podrán aprovechar al máximo su intuición y creatividad para alcanzar sus metas más
+                            ambiciosas y encontrar la felicidad en todas las áreas de su vida.</p>
+                    </div>
+
+                </div>
+                <!--PRODUCTO SUGERIDO-->
+                <div class="col bg-white d-flex flex-column justify-content-center align-items-center py-4"
+                    style="border-radius: 40px">
+
+                    <div class="row">
+                        <p class="title fs-3 lh-1">El regalo Recomendado</p>
+                    </div>
+                    <div class="row">
+                        <!--IMAGEN PRODUCTO SUGERIDO-->
+                        <div class="col">
+                            <img class="img-fluid" src="/img/for_anyone.webp" />
+                        </div>
+                        <div class="col">
+                            <!--TITULO PRODUCTO SUGERIDO-->
+                            <p class="title fs-5 lh-1 fw-bold">212 NYC Men 100ml Eau de Toilette</p>
+                            <!--DETALLE PRODUCTO SUGERIDO-->
+                            <p class="fs-6 lh-1">Moderno y profundo, resuena con la sensibilidad e inteligencia de
+                                Piscis, haciendo eco de su fuerte brújula moral y su amor por el mar.</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <!--BOTON PRODUCTO SUGERIDO-->
+                        <a href="#" class="text-decoration-none">
+                            <button class="btn btn-light btn-product border-0 py-3 px-5 rounded-3">
+                                <span class="fw-bold fs-6">VER PRODUCTO</span>
+                            </button>
+                        </a>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+            <!-- FIN TEXTOS -->
+
         </div>
 
 
