@@ -132,28 +132,22 @@ body {
 }
 
 /* mobile*/
-/* Estilos para dispositivos extra pequeños (xs) */
-@media (max-width: 575.98px) {
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  /* Estilos específicos para móviles */
+  #background-index {
+    max-width: 150% !important;
+  }
 }
 
-/* Estilos para dispositivos pequeños (sm) */
-@media (min-width: 576px) {
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos específicos para tablets */
 }
 
-/* Estilos para dispositivos medianos (md) */
-@media (min-width: 768px) {
-}
-
-/* Estilos para dispositivos grandes (lg) */
-@media (min-width: 992px) {
-}
-
-/* Estilos para dispositivos extra grandes (xl) */
-@media (min-width: 1200px) {
-}
-
-/* Estilos para dispositivos extra extra grandes (xxl) */
-@media (min-width: 1400px) {
+/* Estilos para desktops */
+@media only screen and (min-width: 992px) {
+  /* Estilos específicos para desktops */
 }
 
 #stars {
