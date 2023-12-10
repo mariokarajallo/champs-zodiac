@@ -25,27 +25,28 @@
 
 </head>
 
-<body>
+<body style="overflow: auto;">
     <div class="container-fluid custom-container">
 
         <!-- Fondo degradado -->
         <div class="position-absolute top-0 start-0 w-100 h-100 background-gradient"></div>
         <!-- FIN Fondo degradado -->
 
-        <!-- FONDO DE ESTRELLAS -->
-        <section class="wrapper">
-            <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-        </section>
-        <!-- FIN FONDO DE ESTRELLAS-->
+
+
 
 
         <!-- CONTENIDO PRINCIPAL -->
-        <div class="content m-0" style="min-height: 100vh;">
+        <div class="content m-0" style="min-height: 100vh; overflow: hidden;">
+            <!-- FONDO DE ESTRELLAS -->
+            <section class="wrapper">
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
+            </section>
+            <!-- FIN FONDO DE ESTRELLAS -->
             <!-- TEXTOS -->
-
-            <div class="row">
+            <div class="row p-0 m-0">
                 <div class="col text-center">
                     <!--SIGNO ZODIACAL-->
                     <div>
@@ -60,13 +61,16 @@
 
             </div>
 
-            <div class="row align-items-center container my-5">
+            <!--IMAGEN SIGNO ZODIACAL, TEXTO , PRODUCTO SUGERIDO -->
+
+            <div class="row align-items-center px-md-5 mb-5 my-md-5 p-0 m-0">
+
                 <!--IMAGEN SIGNO ZODIACAL-->
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <img src="/img/sign/Montajes Ruedas CH_piscis.webp" class="img-fluid" alt="">
                 </div>
                 <!--INFORMACION SIGNO ZODIACAL-->
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <div class="text-left fs-6 text-white">
                         <p>Los nacidos bajo el signo de Piscis son conocidos por su intuición, sensibilidad y
                             creatividad. Son personas soñadoras y románticas, capaces de conectar profundamente con los
@@ -80,13 +84,13 @@
 
                 </div>
                 <!--PRODUCTO SUGERIDO-->
-                <div class="col bg-white d-flex flex-column justify-content-center align-items-center py-4"
+                <div class="col-12 col-md-4 bg-white d-flex flex-column justify-content-center align-items-center py-4"
                     style="border-radius: 40px">
 
-                    <div class="row">
+                    <div class="row p-0 m-0">
                         <p class="title fs-3 lh-1">El regalo Recomendado</p>
                     </div>
-                    <div class="row">
+                    <div class="row p-0 m-0">
                         <!--IMAGEN PRODUCTO SUGERIDO-->
                         <div class="col">
                             <img class="img-fluid" src="/img/for_anyone.webp" />
@@ -99,7 +103,7 @@
                                 Piscis, haciendo eco de su fuerte brújula moral y su amor por el mar.</p>
                         </div>
                     </div>
-                    <div class="row text-center">
+                    <div class="row text-center p-0 m-0">
                         <!--BOTON PRODUCTO SUGERIDO-->
                         <a href="#" class="text-decoration-none">
                             <button class="btn btn-light btn-product border-0 py-3 px-5 rounded-3">
