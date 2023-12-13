@@ -28,7 +28,7 @@
         <div class="content m-0" style="min-height: 100vh; /* 100% del alto de la ventana visible */">
 
             <!-- LOGO CAROLINA HERRERA-->
-            <div class="row m-0 mb-5" style="margin-top: 100px;">
+            <div class="row m-0 mb-2">
                 <div class="col text-center logo-container ">
                     <img src="/img/logo carolina herrera.svg" alt="" class="img-fluid">
                 </div>
@@ -36,19 +36,31 @@
             <!-- FIN LOGO CAROLINA HERRERA-->
 
             <!-- TEXTOS -->
-            <div class="row my-0 my-md-5">
+            <div class="row my-2 my-md-5">
                 <div class="col text-center">
-                    <div class="px-5 px-md-0">
-                        <p class="title fs-1 text-white lh-1 m-0 ">EL ZODIACO </p>
-                        <p class="title fs-1 text-white lh-1 m-0">MÁGICO HERRERA </p>
+                    <div class="p-0">
+                        <!--TEXTO ESCRITORIO-->
+                        <p class="title fs-1 text-white lh-1 m-0 d-none d-md-block">EL ZODIACO </p>
+                        <p class="title fs-1 text-white lh-1 m-0 d-none d-md-block">MÁGICO HERRERA </p>
+                        <!--TEXTO MOBILE-->
+                        <p class="title fs-5 text-white lh-1 m-0 d-block d-md-none">EL ZODIACO MÁGICO HERRERA </p>
+
                     </div>
                 </div>
-
             </div>
 
-            <div class="row my-3 my-md-5">
+            <div class="row my-2 my-md-5">
                 <div class="px-5 px-lg-0 text-center">
-                    <span class="fs-5 text-white" style="text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) ;">Encuentra el
+                    <!--TEXTO ESCRITORIO-->
+                    <span class="fs-5 text-white d-none d-md-block"
+                        style="text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) ;">Encuentra el
+                        regalo mágico perfecto para estas fiestas con la
+                        Carta
+                        Astral
+                        Herrera.</span>
+                    <!--TEXTO MOBILE-->
+                    <span class="fs-6 text-white d-block d-md-none"
+                        style="text-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25) ;">Encuentra el
                         regalo mágico perfecto para estas fiestas con la
                         Carta
                         Astral
@@ -58,7 +70,7 @@
             <!-- FIN TEXTOS -->
 
             <!-- BOTON SIGUIENTE -->
-            <div class="row my-5 text-center">
+            <div class="row my-2 m-0 text-center">
                 <a href="/genero.html" class="text-decoration-none">
                     <button class="btn btn-light border-0 px-5 py-3" onmouseover="this.style.transform='scale(1.05)';"
                         onmouseout="this.style.transform='scale(1)';">
